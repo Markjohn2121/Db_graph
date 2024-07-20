@@ -1,0 +1,84 @@
+body {
+  background-color: whitesmoke;
+}
+
+.main-con {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+}
+
+.bg-con {
+  background-image: url("../image/image.png");
+  width: 100%;
+  height: 40vh;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: border-box;
+}
+
+.chart-wrapper {
+  width: auto;
+}
+
+.admin-wrap {
+  background-color: rgba(55, 55, 55, 0.592);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: auto;
+}
+
+.tableViewsWrapper {
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+  justify-items: center;
+  margin-top: 8em;
+}
+
+.tbwrap {
+  padding: 1em;
+  border: rgb(92, 92, 92) solid 2px;
+  border-radius: 1em;
+}
+
+.tbwrap1 {
+  position: relative;
+  background-color: rgb(139, 139, 139);
+  width: auto;
+}
+
+.tbwrap2 {
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  width: auto;
+}
+
+.action-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1em;
+  justify-items: center;
+  align-items: center;
+}
+
+/* Media query for smaller screens */
+#header-con {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  background-color: transparent;
+  width: 100%;
+  margin-bottom: 5em;
+}/*# sourceMappingURL=style.css.map */

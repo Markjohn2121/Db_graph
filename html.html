@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Login</title>
+    <link rel="stylesheet" href="styles.css">
+
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: url('background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: white;
+        }
+        
+        .container {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            width: 90%;
+            max-width: 400px;
+        }
+        
+        .logo img {
+            width: 100px;
+            margin-bottom: 20px;
+        }
+        
+        .login-form {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .login-form input {
+            margin: 10px 0;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        
+        .login-form button {
+            margin: 20px 0;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007BFF;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        
+        .options {
+            margin: 20px 0;
+        }
+        
+        .scan-qr {
+            background: none;
+            border: 1px solid white;
+            padding: 10px;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+        }
+        
+        .footer {
+            margin-top: 20px;
+        }
+        
+        .footer a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <form class="login-form">
+            <input type="text" placeholder="Machine ID" required>
+            <input type="password" placeholder="Password" required>
+            <label>
+                <input type="checkbox"> Show Password
+            </label>
+            <button type="submit">Start</button>
+        </form>
+        <div class="options">
+            <span>or</span>
+            <button class="scan-qr">Scan QR Code</button>
+        </div>
+        <div class="footer">
+            <span>No WiFi connection on your machine? <a href="#">Find WiFi</a></span>
+        </div>
+    </div>
+</body>
+
+</html>
